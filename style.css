@@ -1,3 +1,66 @@
 * {
     box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.userCard{
+    max-width: 200px;
+    min-width: 150px;
+    width: 100%;
+    box-shadow: 0 0 15px gray;
+    border-radius: 10px;
+
+}
+
+.userImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 6px;
+}
+
+.userName{
+    font-weight: 700;
+}
+
+.userAge{
+    font-size: 18px;
+}
+.position{
+    color: gray;
+    font-size: 14px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.gitLink,
+.tgLink{
+    font-size: 25px;
+}
+ 
+.tgLink{
+    color: #33A8D9;
+}
+
+.gitLink{   
+    color: black;
+}
