@@ -1,0 +1,80 @@
+
+body{
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.userCard{
+    max-width: 200px;
+    min-width: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+
+.userPhoto{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.userPosition{
+    font-size: 15px;
+    color: gray;
+}
+
+.linksCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.userNameStyle{
+    font-weight: 600;
+}
+
+.ageStyle{
+    font-size: 17px;
+}
+
+.linkGit,
+.linkTg{
+    font-size: 25px;
+}
+
+.linkTg{
+    color: #2FA3D9;
+}
+
+.linkGit{
+    color: black;
+}
+
+.likeCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.heart{
+    color: red;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+}
