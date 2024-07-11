@@ -3,12 +3,11 @@ import styles from './UserCard.module.css'
 
 
 function UserCard(props) {
-  const {
-    userName, userSurname, userAge, isMale, userPhoto, userTG, userGitHub, userFollowers
+  const { userInfo:{userName, userSurname, userAge, isMale, userPhoto, userTG, userGitHub, userFollowersCount}
   } = props
 
   const [liked, setLiked] = useState(false);
-  const [followers, setFollowers] = useState(userFollowers);
+  const [followers, setFollowers] = useState(userFollowersCount);
 
   const handleLike = () => {
     if (liked) {
