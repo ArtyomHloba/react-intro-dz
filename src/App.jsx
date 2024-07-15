@@ -1,24 +1,59 @@
-import UserCard from "./components/UserCard"
+import UserList from "./components/UsersList";
 
-const user = {
-  userName: 'John',
-  userSurname: 'Doe',
-  userAge: 20,
-  isMale: true,
-  userPhoto: 'https://www.matthewdevaney.com/wp-content/uploads/2021/08/powerapps-userphoto-featured-1.jpg',
-  userTG: '@ggloba',
-  userGitHub: 'https://github.com/ArtyomHloba?tab=repositories',
-  userFollowersCount: 200,
-}
+const users = [
+  {
+    id: 0,
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+    name: "Katherine",
+    surname: "Creola",
+    age: 32,
+    profession: "математик",
+  },
+  {
+    id: 1,
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+    name: "Molina",
+    surname: "Mario",
+    age: 15,
+    profession: "хімік",
+  },
+  {
+    id: 2,
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+    name: "Abdus",
+    surname: "Salam",
+    age: 24,
+    profession: "фізик",
+  },
+  {
+    id: 3,
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+    name: "Julian",
+    surname: "Percy",
+    age: 30,
+    profession: "хімік",
+  },
+  {
+    id: 4,
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+    name: "Subrahmanyan",
+    surname: "Subrahmanyan",
+    age: 21,
+    profession: "астрофізик",
+  },
+];
 
 function App() {
   return (
     <>
-      <UserCard
-        userInfo={user}
-      />
+      <UserList usersInfo={users} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
