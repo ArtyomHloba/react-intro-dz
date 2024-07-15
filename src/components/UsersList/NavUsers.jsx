@@ -1,13 +1,19 @@
 import styles from "./UserList.module.css";
 import classNames from "classnames";
+import { CiTrash } from "react-icons/ci";
 
-function NavUsers({ navUser: user, changeActiveUser, userIndex }) {
+function NavUsers({ navUser: user, changeActiveUser, userIndex, deleteUser }) {
   const linkClassName = classNames(styles.userCard, {
     [styles.activeUserList]: user.isActive,
   });
 
   const userClickHandler = () => {
     changeActiveUser(userIndex);
+  };
+
+  const deleteUserHandler = (e) => {
+    e.stopPropagation();
+    deleteUser(userIndex);
   };
 
   return (
@@ -22,6 +28,7 @@ function NavUsers({ navUser: user, changeActiveUser, userIndex }) {
       </h2>
       <p>Вік: {user.age}</p>
       <p>Професія: {user.profession}</p>
+      <CiTrash className={styles.trashBtn} onClick={deleteUserHandler} />
     </div>
   );
 }

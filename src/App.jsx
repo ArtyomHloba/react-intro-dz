@@ -15,7 +15,7 @@ const users = [
   {
     id: 1,
     imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+      "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
     name: "Molina",
     surname: "Mario",
     age: 15,
@@ -30,7 +30,7 @@ const users = [
     surname: "Salam",
     age: 24,
     profession: "фізик",
-    isActive: true,
+    isActive: false,
   },
   {
     id: 3,
