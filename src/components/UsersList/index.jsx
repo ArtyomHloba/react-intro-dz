@@ -1,24 +1,28 @@
+import { useState } from "react";
+import NavUsers from "./NavUsers";
 import styles from "./UserList.module.css";
 
 function UserList({ usersInfo }) {
-  return (
-    <div className={styles.userList}>
-      {usersInfo.map((user) => (
-        <div key={user.id} className={styles.userCard}>
-          <img
-            className={styles.userPhoto}
-            src={user.imgSrc}
-            alt={`${user.name} ${user.surname}`}
-          />
-          <h2>
-            {user.name} {user.surname}
-          </h2>
-          <p>Вік: {user.age}</p>
-          <p>Професія: {user.profession}</p>
-        </div>
-      ))}
-    </div>
-  );
+  const [navUser, setNavUser] = useState(usersInfo);
+
+  function changeActiveUser(selectedNavUserIndex) {
+    const copyNavUser = [...navUser];
+    copyNavUser[selectedNavUserIndex].isActive =
+      !copyNavUser[selectedNavUserIndex].isActive;
+    setNavUser(copyNavUser);
+  }
+
+  const mapUserList = (user, index) => {
+    return (
+      <NavUsers
+        key={user.id}
+        navUser={user}
+        userIndex={index}
+        changeActiveUser={changeActiveUser}
+      />
+    );
+  };
+  return <div>{navUser.map(mapUserList)}</div>;
 }
 
 export default UserList;

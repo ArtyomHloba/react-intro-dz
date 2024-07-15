@@ -1,4 +1,5 @@
 import UserList from "./components/UsersList";
+import NavUsers from "./components/UsersList/NavUsers";
 
 const users = [
   {
@@ -9,6 +10,7 @@ const users = [
     surname: "Creola",
     age: 32,
     profession: "математик",
+    isActive: false,
   },
   {
     id: 1,
@@ -18,6 +20,7 @@ const users = [
     surname: "Mario",
     age: 15,
     profession: "хімік",
+    isActive: false,
   },
   {
     id: 2,
@@ -27,6 +30,7 @@ const users = [
     surname: "Salam",
     age: 24,
     profession: "фізик",
+    isActive: true,
   },
   {
     id: 3,
@@ -36,6 +40,7 @@ const users = [
     surname: "Percy",
     age: 30,
     profession: "хімік",
+    isActive: false,
   },
   {
     id: 4,
@@ -45,6 +50,7 @@ const users = [
     surname: "Subrahmanyan",
     age: 21,
     profession: "астрофізик",
+    isActive: false,
   },
 ];
 
