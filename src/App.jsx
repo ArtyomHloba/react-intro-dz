@@ -1,5 +1,5 @@
+import SignUpForm from "./components/SignUpForm";
 import UserList from "./components/UsersList";
-import NavUsers from "./components/UsersList/NavUsers";
 
 const users = [
   {
@@ -58,6 +58,7 @@ function App() {
   return (
     <>
       <UserList usersInfo={users} />
+      <SignUpForm />
     </>
   );
 }
