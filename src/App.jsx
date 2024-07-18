@@ -1,5 +1,6 @@
 import SignUpForm from "./components/SignUpForm";
 import UserList from "./components/UsersList";
+import Weather from "./components/Weather";
 
 const users = [
   {
@@ -57,8 +58,9 @@ const users = [
 function App() {
   return (
     <>
-      <UserList usersInfo={users} />
-      <SignUpForm />
+      <Weather />
+      {/* <UserList usersInfo={users} />
+      <SignUpForm /> */}
     </>
   );
 }
