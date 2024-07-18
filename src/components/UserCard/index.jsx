@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
-import styles from './UserCard.module.css'
-
+import React, { useState } from "react";
+import styles from "./UserCard.module.css";
 
 function UserCard(props) {
-  const { userInfo:{userName, userSurname, userAge, isMale, userPhoto, userTG, userGitHub, userFollowersCount}
-  } = props
+  const {
+    userInfo: {
+      userName,
+      userSurname,
+      userAge,
+      isMale,
+      userPhoto,
+      userTG,
+      userGitHub,
+      userFollowersCount,
+    },
+  } = props;
 
   const [liked, setLiked] = useState(false);
   const [followers, setFollowers] = useState(userFollowersCount);
@@ -19,15 +28,15 @@ function UserCard(props) {
   };
 
   const isMaleColor = {
-    color: isMale ? '#33A8D9' : 'pink',
+    color: isMale ? "#33A8D9" : "pink",
   };
 
   const ageColor = {
-    color: userAge >= 18 ? 'green' : 'red',
+    color: userAge >= 18 ? "green" : "red",
   };
 
   const likeButtonColor = {
-    color: liked ? 'red' : 'grey',
+    color: liked ? "red" : "grey",
   };
 
   return (
@@ -57,7 +66,7 @@ function UserCard(props) {
           style={likeButtonColor}
           onClick={handleLike}
         >
-          <i class="fa-solid fa-heart"></i>
+          <i className="fa-solid fa-heart"></i>
         </button>
       </div>
     </article>
