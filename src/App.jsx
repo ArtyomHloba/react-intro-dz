@@ -1,68 +1,35 @@
-import SignUpForm from "./components/SignUpForm";
-import UserList from "./components/UsersList";
-import Weather from "./components/Weather";
+import Slider from "./components/Slider";
 
-const users = [
+const slides = [
   {
-    id: 0,
-    imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-    name: "Katherine",
-    surname: "Creola",
-    age: 32,
-    profession: "математик",
-    isActive: false,
+    title: "BMW M3",
+    description: "BMW M3 in white color",
+    src: "https://s12079.pcdn.co/wp-content/uploads/2015/10/bmw_m3_autumn-wallpaper-1920x1080.jpg",
   },
   {
-    id: 1,
-    imgSrc:
-      "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
-    name: "Molina",
-    surname: "Mario",
-    age: 15,
-    profession: "хімік",
-    isActive: false,
+    title: "Mercedes Benz CLA 250 AMG",
+    description: "Mercedes Benz CLA 250 AMG in black color",
+    src: "https://uhdwallpapers.org/uploads/converted/19/01/13/mercedes-benz-cla-250-amg-1920x1080_578865-mm-90.jpg",
   },
   {
-    id: 2,
-    imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-    name: "Abdus",
-    surname: "Salam",
-    age: 24,
-    profession: "фізик",
-    isActive: false,
+    title: "Ford Mustang",
+    description: "Ford Mustang in blue color",
+    src: "https://www.baltana.com/files/wallpapers-20/Ford-Mustang-Shelby-GT500-Widescreen-Wallpapers-48448.jpg",
   },
   {
-    id: 3,
-    imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-    name: "Julian",
-    surname: "Percy",
-    age: 30,
-    profession: "хімік",
-    isActive: false,
+    title: "Tesla Model S",
+    description: "Tesla Model S in red color",
+    src: "https://www.baltana.com/files/cars-1/2018-Tesla-Model-S-Wallpaper-1920x1080-70416.jpg",
   },
   {
-    id: 4,
-    imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-    name: "Subrahmanyan",
-    surname: "Subrahmanyan",
-    age: 21,
-    profession: "астрофізик",
-    isActive: false,
+    title: "McLaren P1",
+    description: "McLaren P1 in white color",
+    src: "https://i.pinimg.com/originals/24/85/2b/24852b690de2f16f63690351bc55d31c.jpg",
   },
 ];
 
 function App() {
-  return (
-    <>
-      <Weather />
-      {/* <UserList usersInfo={users} />
-      <SignUpForm /> */}
-    </>
-  );
+  return <Slider slides={slides} />;
 }
 
 export default App;
