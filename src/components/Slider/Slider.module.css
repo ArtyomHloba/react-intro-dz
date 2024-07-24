@@ -80,6 +80,7 @@
   padding: 5px 15px;
   cursor: pointer;
   box-shadow: 0 0 10px purple;
+  transition: 0.2s background-color;
   position: absolute;
   top: 10px;
   left: 10px;

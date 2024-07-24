@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Slider from "./components/Slider";
 
 const slides = [
@@ -29,7 +31,13 @@ const slides = [
 ];
 
 function App() {
-  return <Slider slides={slides} />;
+  return (
+    <>
+      <Header />
+      <Slider slides={slides} />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
