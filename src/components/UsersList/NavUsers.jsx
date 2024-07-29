@@ -1,6 +1,6 @@
-import styles from "./UserList.module.css";
-import classNames from "classnames";
 import { CiTrash } from "react-icons/ci";
+import classNames from "classnames";
+import styles from "./UserList.module.css";
 
 function NavUsers({ navUser: user, changeActiveUser, userIndex, deleteUser }) {
   const linkClassName = classNames(styles.userCard, {
