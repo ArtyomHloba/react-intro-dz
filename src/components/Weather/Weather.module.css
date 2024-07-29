@@ -1,16 +1,8 @@
-body {
-  padding: 20px;
-}
-
-p {
-  color: white;
-}
-
 .weatherContainer {
   max-width: 200px;
   min-width: 100px;
   width: 100%;
-
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -9,6 +9,51 @@ function HomePage() {
         delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
         minima!
       </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
+      <p className={styles.mainContent}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        delectus adipisci! Atque sed debitis repellat est velit quis? Quibusdam,
+        minima!
+      </p>
     </div>
   );
 }
