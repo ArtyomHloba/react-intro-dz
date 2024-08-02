@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import styles from "./Weather.module.css";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { LuWind } from "react-icons/lu";
+import styles from "./Weather.module.css";
 
 const WEATHER_API = `https://api.open-meteo.com/v1/forecast?latitude=47.8517&longitude=35.1171&current=temperature_2m,wind_speed_10m&forecast_days=1`;
 
