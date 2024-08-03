@@ -1,36 +1,29 @@
 import { NavLink } from "react-router-dom";
 import styles from "./HeaderPage.module.css";
-import classNames from "classnames";
 
 function HeaderPage() {
-  const linkStyle = ({ isActive }) =>
-    isActive
-      ? { boxShadow: "0 0 5px blue", borderRadius: "10px", padding: "3px" }
-      : {};
-
+  const linkStyle = ({ isActive }) => {
+    return isActive ? styles.navigationIsActive : styles.navigation;
+  };
   return (
     <nav className={styles.navContainer}>
       <p>
-        <NavLink to="/" style={linkStyle} className={styles.navigation}>
+        <NavLink to="/" className={linkStyle}>
           Home
         </NavLink>
       </p>
       <p>
-        <NavLink to="/about" style={linkStyle} className={styles.navigation}>
+        <NavLink to="/about" className={linkStyle}>
           About
         </NavLink>
       </p>
       <p>
-        <NavLink
-          to="/sign-up-form"
-          style={linkStyle}
-          className={styles.navigation}
-        >
+        <NavLink to="/sign-up-form" className={linkStyle}>
           Sign Up
         </NavLink>
       </p>
       <p>
-        <NavLink to="/weather" style={linkStyle} className={styles.navigation}>
+        <NavLink to="/weather" className={linkStyle}>
           Weather
         </NavLink>
       </p>
