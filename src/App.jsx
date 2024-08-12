@@ -1,7 +1,7 @@
-import WeatherLoader from "./components/WeatherLoader";
+import UserForm from './components/forms/UserForm'
 
-function App() {
-  return <WeatherLoader />;
+function App () {
+  return <UserForm />
 }
 
-export default App;
+export default App

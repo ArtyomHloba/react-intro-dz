@@ -8,10 +8,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   padding: 20px;
   box-shadow: 0 0 10px gray;
-  background-color: lightseagreen;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
   border-radius: 20px;
 }
 
@@ -30,34 +35,37 @@ body {
 .input {
   padding: 10px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid black;
 }
 .error {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   color: brown;
+  font-size: 16px;
 }
 
 .btnSignUp {
-  background-color: white;
+  font-size: 20px;
+  background-color: rgb(63, 94, 251);
   border: none;
   align-self: center;
   padding: 5px 50px;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .btnSignUp:hover {
-  background-color: gray;
+  background: rgba(252, 70, 107, 1);
+  transform: scale(1.05);
 }
 
 .valid {
-  border: 1px solid green;
   background-color: lightgreen;
+  border: 2px solid green;
 }
 
 .invalid {
-  border: red;
   background-color: lightcoral;
+  border: 2px solid red;
 }
